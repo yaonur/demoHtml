@@ -1,0 +1,180 @@
+/*  */
+h1 {
+  color: rgba(14, 69, 172, 0.712);
+  text-align: center;
+  text-shadow: 4px 4px 5px rgb(71, 8, 8);
+}
+.level3cats {
+  color: rgb(151, 90, 21);
+}
+#italicCats {
+  color: rgb(16, 104, 60);
+}
+nav {
+  margin: 20px;
+  background-color: aqua;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  padding: 5px 15px 5px 15px;
+}
+/*  */
+a {
+  text-decoration: none;
+}
+.circleImg {
+  height: 200px;
+  border-radius: 30%;
+}
+img {
+  box-shadow: 20px 10px 15px rgb(65, 88, 77);
+  margin: 10px 10px 10px 10px;
+}
+img:hover {
+  height: 150px;
+  box-shadow: none;
+}
+.container {
+  border: 10px dashed rgba(31, 168, 104, 0.678);
+  margin: 40px;
+  padding: 15px 5px 5px 53px;
+}
+.box {
+  height: 200px;
+  width: 200px;
+  background: blue;
+  margin: 20px;
+  text-align: center;
+}
+@keyframes fadeMe {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#box1 {
+  animation-name: fadeMe;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#box2 {
+  animation-name: rotation;
+  animation-duration: 2s;
+  animation-iteration-count: 4s;
+  animation-timing-function: ease-in-out;
+  border-radius: 10%;
+  background-image: radial-gradient(
+    circle,
+    purple,
+    orange,
+    pink,
+    yellow,
+    purple
+  );
+}
+@keyframes getBigger {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+#box3 {
+  animation: getBigger infinite 8s ease-in;
+  border-radius: 50%;
+  background-color: aqua;
+}
+@keyframes changeColor {
+  0% {
+    background-color: gray;
+  }
+  25% {
+    background-color: purple;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: red;
+  }
+  100% {
+    background-color: gray;
+  }
+}
+#box4 {
+  animation: changeColor 3s linear 0s infinite forwards;
+}
+@keyframes moveBox {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 101px;
+    top: 101px;
+  }
+  50% {
+    left: -200px;
+    top: 200px;
+  }
+  75% {
+    left: 500px;
+    top: 500px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+#box5 {
+  position: relative;
+  background: red;
+  animation: moveBox 5s 4s;
+}
+#box6 {
+  top: 100px;
+  left: 100px;
+  position: relative;
+}
+/* html {
+   background-image: linear-gradient(to right, blue, green, purple); 
+} */
+
+.flex {
+  border: 10px solid;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  justify-content: center;
+  padding: 70px;
+}
+
+form input,
+textarea,
+button {
+  display: block;
+  margin: 30px;
+}
